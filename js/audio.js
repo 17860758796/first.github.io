@@ -9,12 +9,6 @@ function rotate(){
     let run = setInterval(rotate,80);
 
 
-
-
-
-
-
-
 let x = 2;
 img.addEventListener('click',c)
 function c(){
