@@ -2,7 +2,9 @@ $(function(){
     $('#body').css({'overflow':'hidden'});
     let allIMg = $('img');
     let num = 0;
-    
+    let bgm = document.getElementById('bgm');
+    bgm.loop = true;
+    bgm.autoplay = true;
     allIMg.each(function(i){
         let newImg = new Image();
         newImg.onload = null;
@@ -28,10 +30,11 @@ $(function(){
             setTimeout(() => {
                 loodingend()
             }, 1000);           
-            console.log(balign);
         }
+
         newImg.src = allIMg[i].src;
     })
+    $('#menu').css({'z-index':'0'});
 })
 
 
