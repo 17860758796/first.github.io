@@ -49,6 +49,7 @@ ul li a{
     overflow: hidden;
     font-size: 21px;
     color: white;
+    user-select:none;
 }
 ul li a:hover{
     /* border: 0px; */
