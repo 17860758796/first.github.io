@@ -1,0 +1,91 @@
+/* 加载界面开始 */
+/* 背景颜色开始 */
+#loading{
+    font-family: "SAO UI", serif;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(0deg,#000000,#434343);
+    overflow: hidden;
+    z-index: 999;
+}
+/* 背景颜色结束 */
+/* 文字位置开始 */
+#lt{
+    position: relative;
+    top: -10%;
+    width: 300px;
+    height: 100px;
+    font-size: 27px;
+    color: white;
+    user-select: none;
+}
+#lt1{
+    text-align: left;
+}
+#lt2{
+    text-align: right;
+}
+/* 文字位置结束 */
+/* 进度条开始 */
+#bor{
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+}
+#jd{
+    font-size: 21px;
+    text-align: center;
+    color: white;
+}
+#bor1,#bor2{
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    border-radius: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+#bor1{
+    left: -50%;
+}
+#bor2{
+    right: -50%;
+}
+#bor1::before,#bor2::before{
+    position: absolute;  
+    top: -1px;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 2px white;
+}
+#bor1::before{
+    right: -1px;
+}
+#bor2::before{
+    left: -1px;
+}
+#bor1::after,#bor2::after{
+    position: absolute;  
+    top: -3px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    filter: blur(6px);
+}
+#bor1::after{
+    right: -3px;
+}
+#bor2::after{
+    left: -3px;
+}
+/* 进度条结束 */

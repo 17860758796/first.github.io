@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+*:hover{
+    cursor: url('../images/mouse.png'), pointer;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+#mouse{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    z-index: 11;
+    pointer-events: none;
+}
+/* 主页开始 */
+#home{
+    position: relative;
+    width: 100%;
+    height: 5000px;
+}
+
+

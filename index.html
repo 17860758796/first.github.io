@@ -3,13 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title>作品集</title>
-        <link rel="stylesheet" type="text/css" href="mystyle.css">
-        <script src="jquery.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/looding.css">
+        <link rel="stylesheet" type="text/css" href="/css/mystyle.css">
+        <link rel="stylesheet" type="text/css" href="/css/导航.css">
 
 
-        <script src="loading.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/bg.css">
 
         
+        <script src="/js/jquery.js"></script>
+        <script src="/js/loading.js"></script>
+
           
     </head>
     <body id="body">
@@ -25,28 +29,46 @@
                     <div id="bor2"></div>
                 </div>
         </div>
+
         <div id="home">
+
         <!-- 导航栏开始 -->
             <div id="menu">
                 <div id="audio">
                     <img src="images/audio.png" id="audioimg">
                     <audio id="bgm" type="audio/mpeg">
-                        <source src="展望星空.mp3">
+                        <source src="../audio/展望星空.mp3">
                     </audio>
-                    <script src='audio.js'></script>
+                    <script src='../js/audio.js'></script>
                 </div>
-            </div>  
-        <!-- 占位图片开始 -->
-        <div id="content">
-        
+                <ul id="menu_ul">
+                    <li><a href="../index.html" style="text-shadow: 0 0 10px #ffffff, 0 0 20px rgb(163, 163, 163), 0 0 40px rgb(119, 119, 119)">
+                        主页<!--  home-->
+                    </a></li>
+                    <li><a href="../经历/experinert.html">
+                        经历<!--  experinert-->
+                    </a></li>
+                    <li><a href="#">
+                        作品<!--  portfolio-->
+                    </a></li>
+                    <li><a href="#">
+                        游戏<!--  games-->
+                    </a></li>
+                    <li><a href="#">
+                        留言<!--  message-->
+                    </a></li>
+                </ul>
+                <div id="mouse"></div>
+                <script src="/js/mouse.js"></script> 
+            </div>
+            <!--  主页图片开始-->
+            <div id="background">
+                <img src="images/homebg.png" id="homebg" alt="homebg">
+            </div>
+
         </div>
-        </div>
 
 
-
-    
     </body>
-    <!-- 先加点图片让加载变慢 -->
-    <script src="click.js"></script> 
-    <script src="image.js"></script>
+    <script src="/js/click.js"></script> 
 </html>
