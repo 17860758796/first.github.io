@@ -14,12 +14,15 @@ body{
 }
 #mouse{
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
+    top: -100px;
+    left: -100px;
     border: 1px solid rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     z-index: 11;
     pointer-events: none;
+    transition:width 0.2s,height 0.2s;
 }
 /* 主页开始 */
 #home{
