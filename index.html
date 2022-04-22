@@ -9,11 +9,12 @@
         <link rel="stylesheet" type="text/css" href="css/bg.css">       
         <script src="js/jquery.js"></script>
         <script src="js/loading.js"></script>
+        <script src="js/snow.js"></script>
 
           
     </head>
     <body id="body">
-
+<!-- 加载页面开始 -->
         <div id="loading">
                 <div id="lt">
                     <p id="lt1">穷且益坚</p>
@@ -25,23 +26,21 @@
                     <div id="bor2"></div>
                 </div>
         </div>
-
+<!-- 加载界面结束 -->
         <div id="home">
-
         <!-- 导航栏开始 -->
             <div id="menu">
                 <div id="audio">
                     <img src="images/audio.png" id="audioimg">
-                    <audio id="bgm" type="audio/mpeg">
-                        <source src="audio/展望星空.mp3">
+                    <audio id="bgm" type="audio/mpeg" src="audio/展望星空.mp3" autoplay="autoplay" loop='true'>
                     </audio>
-                    
+                    <script src='js/audio.js'></script>                  
                 </div>
                 <ul id="menu_ul">
                     <li><a href="index.html" style="text-shadow: 0 0 10px #ffffff, 0 0 20px rgb(163, 163, 163), 0 0 40px rgb(119, 119, 119)">
                         主页<!--  home-->
                     </a></li>
-                    <li><a href="经历/experinert.html">
+                    <li><a href="experinert/experinert.html">
                         经历<!--  experinert-->
                     </a></li>
                     <li><a href="#">
@@ -51,21 +50,28 @@
                         游戏<!--  games-->
                     </a></li>
                     <li><a href="#">
-                        留言<!--  message-->
+                        留言<!--  message-->··
                     </a></li>
                 </ul>
                 <div id="mouse"></div>
                 <script src="js/mouse.js"></script> 
             </div>
-            <!--  主页图片开始-->
-            <div id="background">
-                <img src="images/homebg.png" id="homebg" alt="homebg">
+            <!-- 背景视频播放 -->
+            <div id="video_hero"></div>
+            <div id="video">
+                <video autoplay muted loop id="video-bg">
+                    <source src="video/snow2.mp4" type="video/mp4" id="homebg" >
+                </video>
+            </div>
+            <!-- 主页内容开始 -->
+            <div>
+                <canvas id="canvas"></canvas> 
+                <script src="js/dot.js"></script>
             </div>
 
         </div>
-
-
     </body>
-    <script src='js/audio.js'></script>
+
+ 
     <script src="js/click.js"></script> 
 </html>

@@ -34,10 +34,12 @@
 #bor{
     position: absolute;
     top: 50%;
-    height: 2px;
+    height: 4px;
     width: 100%;
 }
 #jd{
+    position: relative;
+    top: -20px;
     font-size: 21px;
     text-align: center;
     color: white;
@@ -48,7 +50,7 @@
     width: 50%;
     border-radius: 1px;
     background-color: rgb(255, 255, 255);
-    transition: all 0.5s;
+    transition: all 2s;
 }
 #bor1{
     left: -50%;
@@ -60,11 +62,14 @@
     position: absolute;  
     top: -1px;
     content: "";
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 0 2px white;
+    filter: blur(2px); 
+    background: rgb(180, 231, 255);
+    box-shadow: 0 0 1px rgb(224, 243, 255),
+                0 0 2px rgb(159, 220, 255),
+                0 0 3px rgb(143, 214, 255);
 }
 #bor1::before{
     right: -1px;

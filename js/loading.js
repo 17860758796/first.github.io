@@ -2,9 +2,7 @@ $(function(){
     $('#body').css({'overflow':'hidden'});
     let allIMg = $('img');
     let num = 0;
-    let bgm = document.getElementById('bgm');
-    bgm.loop = true;
-    bgm.autoplay = true;
+
     allIMg.each(function(i){
         let newImg = new Image();
         newImg.onload = null;
@@ -20,16 +18,21 @@ $(function(){
             document.getElementById('jd').innerHTML = scale + '%';
             
 
+            let bgm = document.getElementById('bgm');
             function loodingend(){
                 if(num >= $('img').length){
+                    bgm.play();      
                     $('#loading').fadeOut("200","linear");
                     $('#body').css({'overflow':'auto'});
                 }
             }
+            window.addEventListener('click',loodingend)
+               
+
             // 加载太快看不出效果所以这里手动减速，，，
-            setTimeout(() => {
-                loodingend()
-            }, 1000);           
+            // setTimeout(() => {
+            //     loodingend()
+            // }, 1000);           
         }
 
         newImg.src = allIMg[i].src;

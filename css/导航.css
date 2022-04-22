@@ -52,7 +52,6 @@ ul li a{
     user-select:none;
 }
 ul li a:hover{
-    /* border: 0px; */
     transform: translateY(10px);
     text-shadow: 0 0 10px #ffffff, 0 0 20px rgb(163, 163, 163), 0 0 40px rgb(119, 119, 119);
     transition: all 0.1s ease-in-out;
