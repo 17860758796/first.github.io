@@ -1,6 +1,10 @@
+#bgvideo{
+    position: sticky;
+    display: flex;
+}
 #video_hero{
     position: absolute;
-    top: 0;
+    top: -66px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -12,7 +16,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 0;
+    top: -66px;
     left: 0;
     overflow: hidden;
     width: 100%;
@@ -32,7 +36,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    top: 600px;
     margin: 0 auto;
     height: 40px;
     width: 20px;
@@ -51,30 +55,11 @@
 }
 #canvas{
     position: absolute;
-    top: 0;
+    top: -66px;
     left: 0;
     width: 100%;
     z-index: -1;
 }
-/* 作品集内容开始 */
-#museum,#planning,#building{
-    position: relative;
-    top: 960px;
-    left: 0;
-    width: 100%;
-    height: 960px;
-}
-#museum{
-    background-color: aquamarine;
-}
-#planning{
-    background-color: rgb(88, 88, 88);
-}
-#building{
-    background-color: rgb(173, 31, 255);
-}
-
-
 /* 箭头动画 */
 @keyframes down {
     0%{

@@ -22,7 +22,6 @@ body{
     pointer-events: none;
     transition:width 0.2s,height 0.2s;
 }
-/* 主页开始 */
 /* 隐藏滚动条 */
 ::-webkit-scrollbar {
     scrollbar-width: none; /* Firefox */
