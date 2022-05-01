@@ -25,26 +25,50 @@
 #building{
     background-color: rgb(128, 128, 128);
 }
-#city{
+#school{
     background-color: rgb(110, 110, 110);
 }
-#school{
+#other{
     background-color: rgb(88, 88, 88);
 }
 .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: sticky;
-    top: calc(50vh - 150px);
-    left: 96vw;
-    height: 300px;
-    width: 50px;
-    background-color: rgba(0, 0, 0, 0.356);
+    top: calc(50vh - 300px);
+    left: 94vw;
+    height: 600px;
+    width: 100px;
     transition: all 0.2s;
 }
-
-
-#museum:hover ~ .content{
-    background-color: yellow;
+.content ul{
+    position: relative;
 }
-.content:hover{
-    background-color: blue;
+.content ul li{
+    margin: 50px 0;
+    list-style: none;
+}
+.content ul li a{
+    font-family: 微软雅黑,MingLiu;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 21px;
+    letter-spacing: 5px;
+    color: rgb(30, 30, 30);
+    user-select:none;
+}
+#ctnLine{
+    position: absolute;
+    left: 90%;
+    top: 50px;
+    width: 5px;
+    height: 30px;
+    background-color: rgb(128, 128, 128);
+    transition: all 0.2s ease-in-out;
 }

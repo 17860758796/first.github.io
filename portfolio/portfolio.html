@@ -28,6 +28,7 @@
         </div>
     <!-- 加载界面结束 -->
         <!-- 导航栏开始 -->
+        <div id="mouse"></div>
         <div id="menu1">
             <div id="audio">
                 <img src="../images/audio.png" id="audioimg">
@@ -52,8 +53,7 @@
                     留言<!--  message-->
                 </a></li>
             </ul>
-            <div id="mouse"></div>
-            <script src="../js/mouse.js"></script> 
+
         </div>
         <div id="bgvideo">
                 <!-- 背景视频播放 -->
@@ -74,15 +74,35 @@
         <div id="scroll-img"></div>
         <!-- 主页内容开始 -->
         <div id="container">
-            <div class="content" id="content"></div>
+            <div class="content" id="content">                
+                <ul>
+                    <div id="ctnLine"></div>
+                    <li><a href="#" id="museum-text">
+                        博物馆
+                    </a></li>
+                    <li><a href="#" id="planning-text">
+                        小区
+                    </a></li>
+                    <li><a href="#" id="building-text">
+                        高层
+                    </a></li>
+                    <li><a href="#" id="school-text">
+                        学院
+                    </a></li>
+                    <li><a href="#" id="other-text">
+                        其他
+                    </a></li>
+                </ul>
+            </div>
             <div class="page"></div>            
             <div id="museum" class="page"></div>
             <div id="planning" class="page"></div>
             <div id="building" class="page"></div>
-            <div id="city" class="page"></div>
             <div id="school" class="page"></div>
+            <div id="other" class="page"></div>
         </div>
     </body>
+    <script src="../js/mouse.js"></script> 
     <script src="../js/click.js"></script> 
     <script src="../js/portfolio.js"></script>   
 </html>

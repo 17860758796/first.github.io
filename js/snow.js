@@ -63,8 +63,8 @@ window.onload = function () {
         }
     }
     setInterval(a, 100);
+    
     setInterval(draw, 20)                                                   //每20ms调用一次draw函数，即绘制一次，，每秒50帧，，
 
-
-
 };
+
