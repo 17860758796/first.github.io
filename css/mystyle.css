@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    transition: all 0.3s ease-in-out;
+    color: black;
 }
 *:hover{
     cursor: url('../images/mouse.png'), pointer;

@@ -1,5 +1,5 @@
 /* 导航栏开始 */
-#menu1{
+#menu{
     position: sticky;
     /* position: relative; */
     top:0;
@@ -23,18 +23,18 @@
     width: 30px;
 }
 /* 项目 */
-#menu1 ul {
+#menu ul {
     font-family: 微软雅黑,MingLiu;
     position: relative;
     top: 3px;
     left: 140px;
     display: flex;
 }
-#menu1 ul li{
+#menu ul li{
     margin:0 2px 0;
     list-style: none;
 }
-#menu1 ul li a{
+#menu ul li a{
     position: relative;
     width: 120px;
     height: 60px;
@@ -53,18 +53,18 @@
     color: white;
     user-select:none;
 }
-#menu1 ul li a:hover{
+#menu ul li a:hover{
     transform: translateY(10px);
     text-shadow: 0 0 10px #ffffff, 0 0 20px rgb(163, 163, 163), 0 0 40px rgb(119, 119, 119);
     transition: all 0.1s ease-in-out;
 }
-#menu1 ul li a:hover::before{
+#menu ul li a:hover::before{
     transform: skewX(45deg) translateX(0px);
 }
-#menu1 ul li a:hover::after{
+#menu ul li a:hover::after{
     transform: skewX(45deg) translateX(-150px);
 }
-#menu1 ul li a:before{
+#menu ul li a:before{
     content: "";
     position: absolute;
     width: 20px;
@@ -74,7 +74,7 @@
     transform: skewx(45deg) translateX(300px);
     transition: all 0.5s ease-in-out;
 }
-#menu1 ul li a:after{
+#menu ul li a:after{
     content: "";
     position: absolute;
     width: 5px;

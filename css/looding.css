@@ -20,14 +20,17 @@
     width: 300px;
     height: 100px;
     font-size: 27px;
-    color: white;
     user-select: none;
 }
 #lt1{
     text-align: left;
+    color: white;
+
 }
 #lt2{
     text-align: right;
+    color: white;
+
 }
 /* 文字位置结束 */
 /* 进度条开始 */

@@ -33,7 +33,7 @@ class Particle {
 
         lizi_ctx.fillStyle = this.color;
         lizi_ctx.beginPath();
-        lizi_ctx.arc(this.x, this.y, this.r*1, Math.PI * 2, false);        //粒子直径
+        lizi_ctx.arc(this.x, this.y, this.r*0.7, Math.PI * 2, false);        //粒子直径
         lizi_ctx.fill();
         let a = this.x - zssb.x;
         let b = this.y - zssb.y;
@@ -44,10 +44,10 @@ class Particle {
             this.vx += this._x;
             this.vy += this._y;
         }
-        else if(zssb.y > 1000){                         //这里想办法给this.x、this.y个随机值,且只赋予一次
-            this.vx = (Math.random() - 0.5) * 25;
-            this.vy = (Math.random() - 0.5) * 25;
-        }
+        // else if(zssb.y > 1000){                         //这里想办法给this.x、this.y个随机值,且只赋予一次
+        //     this.vx = (Math.random() - 0.5) * 25;
+        //     this.vy = (Math.random() - 0.5) * 25;
+        // }
     }
 }
 function onMouseMove(e){
@@ -60,7 +60,7 @@ function initScene(){
     ww = lizi_canvas.width = window.innerWidth,
     wh = lizi_canvas.height = window.innerHeight;
     lizi_ctx.clearRect(0,0,ww,wh)
-    lizi_ctx.font = 'bold 16vw SAO UI'                               //字体
+    lizi_ctx.font = 'bold 7vw SAO UI'                               //字体
     lizi_ctx.textAlign = 'center'
     lizi_ctx.fillText(headline,ww/2,wh/2);                        //采样文字内容
     // lizi_ctx.drawImage(img,500,0,900,900);                            //采样图片
@@ -68,8 +68,8 @@ function initScene(){
     lizi_ctx.clearRect(0,0,ww,wh)
     lizi_ctx.globalCompositeOperation = 'screen';
     particles=[];
-    for (let i = 0;i < ww;i += Math.round(ww/300)){             //粒子数量，越大采样越细，粒子越多
-        for(let j = 0;j < wh;j += Math.round(ww /300)){
+    for (let i = 0;i < ww;i += Math.round(ww/500)){             //粒子数量，越大采样越细，粒子越多
+        for(let j = 0;j < wh;j += Math.round(ww /500)){
             if(data[((i+j*ww)*4)+3]>200){                       //大于200透明度
                 particles.push(new Particle(i,j))
             }

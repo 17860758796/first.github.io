@@ -1,4 +1,4 @@
-#container{
+#mywork{
     position: absolute;
     top: 0;
     left: 0;
@@ -8,28 +8,71 @@
     overflow-y: scroll;
     overflow-x: hidden;
 }
-#container .page{
+#mywork .page{
     scroll-snap-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
+    background-color: white;
+    border: 1px solid black;
 }
-#museum{
-    background-color: rgb(184, 184, 184);
+/* 主页内容 */
+#mywork .page:nth-child(2){
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top center,#718497,#29323c)
 }
-#planning{
-    background-color: rgb(150, 150, 150);
+/* 博物馆内容开始 */
+#mywork .page:nth-child(3){
+    background: rgb(230, 230, 230)
 }
-#building{
-    background-color: rgb(128, 128, 128);
+#mywork .page:nth-child(4){
+    background: rgb(210, 210, 210)
 }
-#school{
-    background-color: rgb(110, 110, 110);
+#mywork .page:nth-child(5){
+    background: rgb(190, 190, 190)
 }
-#other{
-    background-color: rgb(88, 88, 88);
+/* 小区规划开始 */
+#mywork .page:nth-child(6){
+    background: rgb(170, 170, 170)
+}
+#mywork .page:nth-child(7){
+    background: rgb(150, 150, 150)
+}
+#mywork .page:nth-child(8){
+    background: rgb(130, 130, 130)
+}
+#mywork .page:nth-child(9){
+    background: rgb(110, 110, 110)
+}
+#mywork .page:nth-child(10){
+    background: rgb(90, 90, 90)
+}
+#mywork .page:nth-child(11){
+    background: rgb(70, 70, 70)
+}
+#mywork .page:nth-child(12){
+    background: rgb(50, 50, 50)
+}
+#mywork .page:nth-child(13){
+    background: rgb(100, 100, 100)
+}
+#mywork .page:nth-child(14){
+    background: rgb(120, 120, 120)
+}
+#mywork .page:nth-child(15){
+    background: rgb(150, 150, 150)
+}
+#mywork .page:nth-child(16){
+    background: rgb(170, 170, 170)
+}
+#mywork .page:nth-child(17){
+    background: rgb(110, 110, 110)
 }
 .content{
     display: flex;
@@ -60,8 +103,10 @@
     text-decoration: none;
     font-size: 21px;
     letter-spacing: 5px;
-    color: rgb(30, 30, 30);
     user-select:none;
+}
+.lumion{
+    color: rgb(214,214,214);
 }
 #ctnLine{
     position: absolute;
